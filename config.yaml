@@ -1,0 +1,13 @@
+embedding:
+  codebert_weight: 0.6
+  graph_weight: 0.4
+  # t5_weight: 0.3
+optimization:
+  confidence_threshold: 0.6
+  max_similar_queries: 10
+  similarity_threshold: 0.7
+
+chroma:
+  collection: sql_queries
+  persist_directory: ./chroma_db
+  embedding_function: codebert
